@@ -505,7 +505,7 @@ gdjs.copyArray(runtimeScene.getObjects("player"), gdjs._28216_25138_20869_23481C
 }
 }{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "結算", false);
 }{runtimeScene.getGame().getVariables().getFromIndex(0).getChild("score").setNumber(runtimeScene.getGame().getVariables().getFromIndex(2).getAsNumber());
-}{gdjs.evtTools.network.sendAsyncRequest("http:/127.0.0.1/postscore", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(0)), "POST", "application/json", runtimeScene.getScene().getVariables().getFromIndex(0), runtimeScene.getScene().getVariables().getFromIndex(1));
+}{gdjs.evtTools.network.sendAsyncRequest("/postscore", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(0)), "POST", "application/json", runtimeScene.getScene().getVariables().getFromIndex(0), runtimeScene.getScene().getVariables().getFromIndex(1));
 }
 { //Subevents
 gdjs._28216_25138_20869_23481Code.eventsList1(runtimeScene);} //End of subevents
