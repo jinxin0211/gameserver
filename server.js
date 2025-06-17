@@ -15,7 +15,7 @@ server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
 
 const Datastore = require('nedb-promises')
-let GameDB = Datastore.create(__dirname + '/game.db')
+let GameDB = Datastore.create(__dirname + '/game.db') 
 
 // server.get("/", function (req, res) { //web root
 //     res.send("Hello, World!"); //回傳固定內容
