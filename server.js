@@ -24,7 +24,7 @@ server.get("/score", function (req, res) { //other pages
    //url?user=md&score=1000
    console.log(req.query);
    res.send("req /md");
-});
+}); 
 
 
 server.post("/rank", (req, res) => {
